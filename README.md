@@ -9,7 +9,8 @@ $ python -m http.server --cgi
 ```
 
 ### 브라우저를 열고 아래 주소로 접속함  
-127.0.0.1:8000/cgi-bin/index.py  
+form-pythonCGI 연동 실행 : http://127.0.0.1:8000/  
+fileLoad-pythonCGI 실행 : http://127.0.0.1:8000/cgi-bin/index.py  
 
-### pythonCGI의 형태로 작성된 웹페이지는 cgi-bin폴더 안에 있을 때만 동작함  
+### pythonCGI의 형태로 작성된 웹페이지의 py 파일은 cgi-bin폴더 안에 있을 때만 동작함  
 
