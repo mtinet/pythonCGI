@@ -1,11 +1,34 @@
-localvars_table = '<table>'
-for x in dir():
-  localvars_table += '<tr><td>%s</td></tr>' % x
-localvars_table += '</table>'
-print("Content-type: text/html")
-print("")
-print("""<html><body>
-<p>Hello World! Your custom CGI script is working. Here are your current Python local variables.</p>
-%s
-<p>NOTE: If you want to write useful CGI script, try the Python 'cgi' module. See cgitest.py script.</p>
-</body></html>""" % (localvars_table))
+print("Content-Type: text/html\n")
+print()
+import cgi
+
+form = cgi.FieldStorage()
+
+if 'id' in form:
+    pageId = form["id"].value
+    description = open("cgi-bin/data/"+'HTML', "r").read()
+    #print(description)
+    #print(description.read())
+else:
+    pageId = 'Welcome'
+    description = 'Hello Web'
+
+print('''<!doctype html>
+<html>
+<head>
+  <title>WEB1 - Welcome</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1><a href="index.py">WEB</a></h1>
+  <ol>
+    <li><a href="index.py?id=HTML">HTML</a></li>
+    <li><a href="index.py?id=CSS">CSS</a></li>
+    <li><a href="index.py?id=JavaScript">JavaScript</a></li>
+  </ol>
+  <h2>{title}</h2>
+  <p>{desc}
+  </p>
+</body>
+</html>
+'''.format(title=pageId, desc=description))
