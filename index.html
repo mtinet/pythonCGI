@@ -4,7 +4,21 @@
 </head>
 <body>
 
+<!--
+자체 공유기의 localhost 또는 127.0.0.1로 접근할 때 포트는 CGI서버를 켤 때 지정 가능, 여기서는 8000을 지정함, 외부 접근 불가능
 <form name="form" method="get" action="http://127.0.0.1:8000/cgi-bin/cgi_test.py">
+-->
+  
+<!--
+공인 ip의 포트포워딩을 이용할 때, 공인ip는 115.143.114.11, 서비스포트는 8080, 포트포워딩의 내부 포트는 포트포워딩시 지정된 포트로 이동  
+<form name="form" method="get" action="http://115.143.114.11:8080/cgi-bin/cgi_test.py">
+-->
+
+<!--
+서비스 된 서버의 하위폴더나 파일만 지정할 때(한 번 접속이 되면 자체 공유기의 사설 ip나 공인ip 모두 활용가능한 방법)
+-->
+<form name="form" method="get" action="cgi-bin/cgi_test.py">
+  
 <p>
 name	: <input type="text" name="name">
 email	: <input type="text" name="email">
