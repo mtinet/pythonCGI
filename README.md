@@ -24,5 +24,5 @@ fileLoad-pythonCGI 실행 : http://127.0.0.1:8000/cgi-bin/index.py
 * cgi-bin/index.py - cgi-bin/data/CSS  
 * cgi-bin/index.py - cgi-bin/data/JavaSctipt  
 
-### pythonCGI의 형태로 작성된 웹페이지의 py 파일은 cgi-bin폴더 안에 있을 때만 동작함  
+### * pythonCGI의 형태로 작성된 웹페이지의 py 파일은 cgi-bin폴더 안에 있을 때만 동작함  
 
