@@ -28,6 +28,7 @@ $ python -m http.server --cgi
 ### * pythonCGI의 형태로 작성된 웹페이지의 py 파일은 cgi-bin폴더 안에 있을 때만 동작함  
 
 ### 4. 참조 사이트
+[OpenTutorials WEB-python](https://opentutorials.org/course/3256/19836)  
 [Python: Simple HTTP Server With CGI Scripts Enabled](https://dzone.com/articles/python-simple-http-server-with-cgi-scripts-enabled)  
 [python 입출력](https://planbs.tistory.com/entry/Python-%EC%9E%85%EC%B6%9C%EB%A0%A5)  
 [python으로 CGI프로그램 작성하기](https://sencom.wordpress.com/2014/01/16/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-cgi-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0/)  
