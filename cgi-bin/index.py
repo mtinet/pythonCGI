@@ -6,7 +6,7 @@ form = cgi.FieldStorage()
 
 if 'id' in form:
     pageId = form["id"].value
-    description = open("cgi-bin/data/"+'HTML', "r").read()
+    description = open("cgi-bin/data/"+pageId, "r").read()
     #print(description)
     #print(description.read())
 else:
