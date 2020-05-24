@@ -14,11 +14,11 @@ $ python -m http.server --cgi
 ```
 
 ### 브라우저를 열고 아래 주소로 접속함  
-#### form으로 입력을 받아 해당 명령을 실행하는 방법  
+#### 1. form으로 입력을 받아 해당 명령을 실행하는 방법  
 form-pythonCGI 연동 실행 : http://127.0.0.1:8000/  
 * index.html - cgi-bin/cgi_test.py  
 
-#### 공통적인 부분을 하나의 index.py파일로 실행하고, 사용자의 반응에 따라 바뀌는 부분은 해당 파일을 불러와서 붙여서 보여주는 방법  
+#### 2. 공통적인 부분을 하나의 index.py파일로 실행하고, 사용자의 반응에 따라 바뀌는 부분은 해당 파일을 불러와서 붙여서 보여주는 방법  
 fileLoad-pythonCGI 실행 : http://127.0.0.1:8000/cgi-bin/index.py  
 * cgi-bin/index.py - cgi-bin/data/HTML  
 * cgi-bin/index.py - cgi-bin/data/CSS  
