@@ -16,9 +16,9 @@ print('<body>')
 form = cgi.FieldStorage()
 
 if "email" not in form:
-    print("Error!")
+    print("이메일 주소를 넣어주세요.")
 else:
-    print("Your email address is " + form["email"].value)
+    print(form["name"].value + "님의 이메일 주소는" + form["email"].value + "입니다.")
 
 
 print('</body>')
